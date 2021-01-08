@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+*{
+  outline: none;
+}
+
+.hello-text{
+  color: blue;
+  font-size: 3em;
+  font-weight: 900;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.bg-blue{
+  background-color: blue;
+  color: white;
+}
+
+.text-blue{
+  color: blue;
+}
