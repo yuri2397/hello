@@ -1,39 +1,49 @@
-<nz-layout>
-  <nz-sider nzCollapsible nzWidth="200px">
-    <div class="logo">
-
-    </div>
-    <ul nz-menu nzTheme="dark" nzMode="inline">
-      <li nz-submenu nzTitle="User" nzIcon="user">
-        <ul>
-          <li nz-menu-item>Tom</li>
-          <li nz-menu-item>Bill</li>
-          <li nz-menu-item>Alex</li>
-        </ul>
-      </li>
-      <li nz-submenu nzTitle="Team" nzIcon="team">
-        <ul>
-          <li nz-menu-item>Team 1</li>
-          <li nz-menu-item>Team 2</li>
-        </ul>
-      </li>
-      <li nz-menu-item>
-        <i nz-icon nzType="file">
-
-        </i>
-        <span>File</span>
+<nz-layout class="layout">
+  <!-- SIDEBAR -->
+  <nz-sider [nzWidth]="300" class="bg-blue">
+    <h1 class="text-white hello-profile">Hello</h1>
+    <hr class="hello-divider" />
+    <ul nz-menu nzTheme="light" class="hello-contact-item" nzMode="inline">
+      <li class="btn btn-default card p-0 my-2" nz-menu-item>
+        <div class="card-body p-1 align-items-center d-flex">
+          <nz-avatar
+            [nzSize]="50"
+            class="rounded-circle shadow mr-2"
+            nzIcon="user"
+            nzSrc="//zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+          ></nz-avatar>
+          <div class="friends-name">Mor Diaw</div>
+        </div>
       </li>
     </ul>
   </nz-sider>
-  <nz-layout>
-    <nz-header></nz-header>
+  <nz-layout class="right-layout">
+    <!-- PROFILE D'UN CONTACT -->
+    <nz-header class="hello-frends-profile">
+      <nz-avatar
+        [nzSize]="50"
+        class="rounded-circle shadow mr-2"
+        nzIcon="user"
+        nzSrc="//zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+      ></nz-avatar>
+      Mor Diaw
+    </nz-header>
+    <!-- MESSAGES -->
     <nz-content>
-      <nz-breadcrumb>
-        <nz-breadcrumb-item>User</nz-breadcrumb-item>
-        <nz-breadcrumb-item>Bill</nz-breadcrumb-item>
-      </nz-breadcrumb>
       <div class="inner-content">
-        Bill is a cat.
+        ...
+        <br />
+        Really
+        <br />...<br />...<br />...<br />
+        long
+        <br />...<br />...<br />...<br />...<br />...<br />...
+        <br />...<br />...<br />...<br />...<br />...<br />...
+        <br />...<br />...<br />...<br />...<br />...<br />...
+        <br />...<br />...<br />...<br />...<br />...<br />...
+        <br />...<br />...<br />...<br />...<br />...<br />...
+        <br />...<br />...<br />...<br />...<br />...<br />...
+        <br />...<br />...<br />...<br />...<br />...<br />
+        content
       </div>
     </nz-content>
     <nz-footer>Ant Design ©2020 Implement By Angular</nz-footer>

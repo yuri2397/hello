@@ -73,8 +73,7 @@ export class AuthService {
   // retourne true si le user s'est connecté et son email vérifier.
   get isLoggedIn(): boolean {
     const user = JSON.parse(localStorage.getItem('user'));
-    console.log("IS-LOGIN ::::", user);
-    return (user !== null) ? true : false;
+    return user !== null ? true : false;
   }
 
   // Se deconnecter de l'application

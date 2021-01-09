@@ -32,7 +32,12 @@ export class SignupComponent implements OnInit {
     public ngZone: NgZone
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if(this.auth.isLoggedIn == true){
+      console.log("USER WAS LOGIN");
+      this.router.navigate(['/profile']);
+    }
+  }
 
   // SIGN UP
 
@@ -51,7 +56,7 @@ export class SignupComponent implements OnInit {
         );
         this.userData = response.user;
         localStorage.setItem('user', JSON.stringify(this.userData));
-        this.router.navigate(['welcome/profile']);
+        this.router.navigate(['/profile']);
         this.errorNetWork = false;
         this.isSignUpLoad = false;
       })
@@ -77,7 +82,7 @@ export class SignupComponent implements OnInit {
         this.isSignInLoad = false;
         this.userData = response.user;
         localStorage.setItem('user', JSON.stringify(this.userData));
-        this.router.navigate(['profile']);
+        this.router.navigate(['/profile']);
       })
       .catch((error) => {
         this.isSignInLoad = false;

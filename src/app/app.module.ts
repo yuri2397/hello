@@ -24,6 +24,8 @@ import { NzTabsModule } from 'ng-zorro-antd/tabs';
 import { SignupComponent } from './pages/signup/signup.component';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb'
 registerLocaleData(fr);
 
 /* ANGULAR MATERIAL IMPORTATION */
@@ -52,7 +54,8 @@ registerLocaleData(fr);
     FormsModule,
     CommonModule,
     NzInputModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    NzButtonModule,
   ],
   providers: [{ provide: NZ_I18N, useValue: fr_FR }],
   bootstrap: [AppComponent]

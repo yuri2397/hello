@@ -1,35 +1,26 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import {MatProgressBarModule} from '@angular/material/progress-bar';
 
-import { NzLayoutModule } from 'ng-zorro-antd/layout';
-import { NzGridModule } from 'ng-zorro-antd/grid';
-import { NzInputModule } from 'ng-zorro-antd/input';
-import { NzCardModule } from 'ng-zorro-antd/card';
 import { ProfileComponent } from './profile.component';
-import { MatButtonModule } from '@angular/material/button';
 import { CommonModule } from '@angular/common';
-import { NzButtonModule } from 'ng-zorro-antd/button';
 import { ProfileRoutingModule } from './profile-routing.module';
+import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
+import  { NzAvatarModule } from 'ng-zorro-antd/avatar';
+import {MatCardModule} from '@angular/material/card';
+import { NzListModule } from 'ng-zorro-antd/list';
 @NgModule({
   imports: [
     ProfileRoutingModule,
-    NzLayoutModule,
-    NzGridModule,
-    NzInputModule,
-    NzCardModule,
-    MatButtonModule,
     FormsModule,
     CommonModule,
-    NzButtonModule,
-    MatProgressBarModule,
+    NzLayoutModule,
     NzBreadCrumbModule,
-
+    NzAvatarModule,
+    MatCardModule,
+    NzListModule
   ],
-  declarations: [
-    ProfileComponent,
-  ],
+  declarations: [ProfileComponent],
   exports: [ProfileComponent],
 })
-export class ProfileModule { }
+export class ProfileModule {}
